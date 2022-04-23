@@ -21,7 +21,6 @@ from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
 
 def main():
     baseurl = input("输入网址：")
-    # baseurl = "https://www.bilibili.com/video/BV1oD4y1o79h"
     page, headers, proxies = get_page(baseurl)
     amount, urls = find_series(page, baseurl)
     series_v, series_a, title_all = get_series(urls)
@@ -40,7 +39,7 @@ def get_page(baseurl):
     }
 
     proxies = {
-        "https": "https://103.80.83.48"
+        "https": "https://代理ip"
     }
 
     resp = requests.get(baseurl, headers=headers)
