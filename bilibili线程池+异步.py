@@ -36,11 +36,11 @@ def get_page(baseurl):
     headers = {
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36",
         # 溯源防盗链：
-        "referer": "https://www.bilibili.com/video/BV1G34y1x7Tu?spm_id_from=333.851.b_7265636f6d6d656e64.4"
+        "referer": "输入上级主页面链接！"
     }
 
     proxies = {
-        "https": "https://103.80.83.48"
+        "https": "代理ip"
     }
 
     resp = requests.get(baseurl, headers=headers)
